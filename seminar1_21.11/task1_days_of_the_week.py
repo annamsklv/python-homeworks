@@ -7,14 +7,16 @@
 # ; - 7 -> да
 # ; - 1 -> нет
 
-number_of_day = int(input('Введите цифру, обозначающую день недели:\n'))
-# if type(number_of_day) == str:
-#     print('это не число')
+number_of_day = input('Введите цифру, обозначающую день недели:\n')
 
-week_days = [1, 2, 3, 4, 5, 6, 7]
-if number_of_day not in week_days:
-    print('вы ввели неверное число')
-elif number_of_day == 6 or number_of_day == 7:
-    print('да')
+if number_of_day.isdigit():
+    
+    num = int(number_of_day)
+    if num > 7 or num < 1:
+        print('это не цифра, обозначающая день недели')
+    elif num > 5:
+        print('да')
+    else:
+        print('нет')
 else:
-    print('нет')
+    print('это не цифра, обозначающая день недели')
