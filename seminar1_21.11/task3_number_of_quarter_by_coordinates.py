@@ -19,9 +19,9 @@ elif x_number < 0 and y_number < 0:
     print('3')
 elif x_number > 0 and y_number < 0:
     print('4')
-elif x_number == 0 and y_number != 0:
-    print('точка находится на оси ординат')
-elif y_number == 0 and x_number != 0:
-    print('точка находится на оси абсцисс')
 elif x_number == 0 and y_number == 0:
     print('точка является началом координат')
+elif x_number == 0:
+    print('точка находится на оси ординат')
+elif y_number == 0:
+    print('точка находится на оси абсцисс')
