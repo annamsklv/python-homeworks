@@ -6,4 +6,5 @@ for x in range(2):
     for y in range(2):
         for z in range(2):
             if not(x or y or z) == (not x and not y and not z):
-                print(f'Утветрждение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z истинно при значении переменных :\n x = {x}, y = {y}, z = {z}')
+                # print(f'Утветрждение ¬(X ⋁ Y ⋁ Z) = ¬X ⋀ ¬Y ⋀ ¬Z истинно при значении переменных :\n x = {x}, y = {y}, z = {z}')
+                print(f'{x}\t{y}\t{z}\t{not(x or y or z) == (not x and not y and not z)}')
