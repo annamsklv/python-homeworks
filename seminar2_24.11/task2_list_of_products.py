@@ -5,8 +5,6 @@
 # Пример:
 # - пусть N = 4, тогда [ 1, 2, 6, 24 ] #(1, 1*2, 1*2*3, 1*2*3*4)
 
-n = int(input('N = '))
-
 def factorial(n):
     if n == 1:
         return 1
@@ -20,5 +18,13 @@ def list_of_products(num):
             product_list.append(factorial(i))
     return product_list
 
-print(list_of_products(n))
+
+n = (input('N = '))
+if n.isdigit():
+    num = int(n)
+    print(list_of_products(num))
+else:
+    print('Вы ввели не число')
+
+
 
