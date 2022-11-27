@@ -13,15 +13,15 @@ def create_list(num):
     return (list_of_numbers)
 
 
-def put_zero_after_negative(list):
-    for i in range(len(list)+1):
-        if list[i] < 0:
+def put_zero_after_negative(list_):
+    for i in range(len(list_)+1):
+        if list_[i] < 0:
             if i == - 1:
-                list.append(0)
+                list_.append(0)
             else:
                 # добавление нуля в случае, если последнее число отрицательное, срабатывает не всегда
-                list.insert(i+1, 0)
-    return list
+                list_.insert(i+1, 0)
+    return list_
 
 
 n = input('Введите число:\n')
