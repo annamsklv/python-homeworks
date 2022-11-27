@@ -9,7 +9,6 @@ def create_list(num):
     list_of_numbers = []
     for i in range(num):
         list_of_numbers.append(random.randint(-100, 100))
-        i += 1
     return(list_of_numbers)
 
 def put_zero_after_negative(list):
