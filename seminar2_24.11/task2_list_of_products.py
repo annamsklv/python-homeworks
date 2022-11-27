@@ -1,4 +1,4 @@
-# 2 - Напишите программу, которая принимает на вход число N и выдает набор 
+# 2 - Напишите программу, которая принимает на вход число N и выдает набор
 # произведений (набор - это список) чисел от 1 до N.
 # Не используйте функцию math.factorial.
 
@@ -9,13 +9,13 @@ def factorial(n):
     if n == 1:
         return 1
     else:
-        return n *factorial(n - 1)
+        return n * factorial(n - 1)
 
 
 def list_of_products(num):
     product_list = []
     for i in range(1, num+1):
-            product_list.append(factorial(i))
+        product_list.append(factorial(i))
     return product_list
 
 
@@ -25,6 +25,3 @@ if n.isdigit():
     print(list_of_products(num))
 else:
     print('Вы ввели не число')
-
-
-
