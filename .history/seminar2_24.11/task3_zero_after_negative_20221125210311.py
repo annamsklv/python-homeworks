@@ -1,0 +1,18 @@
+# 3 - Дан массив размера N. После каждого отрицательного элемента массива 
+# вставьте элемент с нулевым значением.
+
+# Пример:
+# - пусть N = 4, тогда [28, -46, 14, -14] => [28, -46, 0, 14, -14, 0]
+import random
+
+def create_list(num):
+    list_of_numbers = []
+    for i in range(num):
+        list_of_numbers.append(random.randint(-100, 100))
+        i += 1
+    
+
+
+        
+num = int(input('Введите число:\n'))
+print(create_list(num))
