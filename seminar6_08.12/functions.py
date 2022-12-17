@@ -1,5 +1,6 @@
 from typing import Optional
 from typing import List
+from random import randint
 
 def give_int(input_string: str, min_num: Optional[int] = None, max_num: Optional[int] = None) -> int:
     '''
@@ -33,3 +34,13 @@ def get_list_data(filename: str) -> List[str]:
     with open(filename, encoding='utf-8') as file:
         return file.read().split('\n')
 
+def create_random_list(min:int, max:int) -> List:
+    '''
+    Возвращает список из случайных чисел с количеством элементов, запрашиваемым у пользователя
+    arg num - количество элементов списка
+    min, max - границы случайного числа
+    returns: List
+    '''
+    num = give_int('Введите количество элементов списка:\n')
+    list_of_numbers = [randint(min, max) for i in range(num)]
+    return (list_of_numbers)

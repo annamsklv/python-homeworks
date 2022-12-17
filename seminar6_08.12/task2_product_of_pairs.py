@@ -6,20 +6,9 @@
 # [2, 3, 5, 6] => [12, 15]
 
 
-from random import randint
 from typing import List
 from functions import give_int
-
-
-def create_random_list() -> List:
-    '''
-    Возвращает список из случайных чисел с количеством элементов, запрашиваемым у пользователя
-    arg num - количество элементов списка
-    returns: List
-    '''
-    num = give_int('Введите количество элементов списка:\n')
-    list_of_numbers = [randint(0, 15) for i in range(num)]
-    return (list_of_numbers)
+from functions import create_random_list
 
 
 def get_products_of_pairs(lst: List[int]) -> List[int]:
@@ -31,6 +20,6 @@ def get_products_of_pairs(lst: List[int]) -> List[int]:
     return (product_lst)
 
 
-list1 = create_random_list()
+list1 = create_random_list(0, 15)
 print(list1)
 print(get_products_of_pairs(list1))
